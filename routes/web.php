@@ -7,12 +7,14 @@ use App\Livewire\Admin\Users\Index;
 use App\Livewire\User\OrderManagement;
 use App\Http\Controllers\Api\AuthController;
 
-Livewire::setScriptRoute(function($handle) {
-    return Route::get('/rodudapp/public/livewire/livewire.js', $handle);
+Livewire::setScriptRoute(function ($handle) {
+    $projectName = basename(base_path());
+    return Route::get("/{$projectName}/public/livewire/livewire.js", $handle);
 });
 
-Livewire::setUpdateRoute(function($handle) {
-    return Route::get('/rodudapp/public/livewire/update', $handle);
+Livewire::setUpdateRoute(function ($handle) {
+    $projectName = basename(base_path());
+    return Route::get("/{$projectName}/public/livewire/update", $handle);
 });
 
 Route::get('/', function () {
