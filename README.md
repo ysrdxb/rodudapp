@@ -45,7 +45,7 @@ This Laravel application simplifies order management with features for both user
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-repo/your-project.git
+   git clone https://github.com/ysrdxb/rodudapp.git
    cd your-project
 2. Create a database and update database and user information in the .env file
 3. Composer update / dump-autoload
