@@ -40,13 +40,25 @@ This Laravel application simplifies order management with features for both user
   - Validates input and ensures authentication.
 
 ## Usage
+
+## Installation Guidance
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-repo/your-project.git
+   cd your-project
+2. Create a database and update database and user information in the .env file
+3. Composer update / dump-autoload
+4. php artisan migrate
+5. php artisan db:seed
+
 ### For Users
 1. Log in to the user dashboard.
 2. Create, view, edit, or delete orders.
 3. Track order statuses.
 
 ### For Admins
-1. Access the admin dashboard.
+1. Access the admin dashboard using admin@rodudapp.com password 11111111.
 2. Monitor real-time notifications for orders.
 3. Manage orders: update statuses, send messages, and view details.
 4. Manage users: add, edit, delete, and search users.
