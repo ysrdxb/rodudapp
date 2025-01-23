@@ -7,13 +7,9 @@ use App\Models\Order;
 use App\Models\User;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Validation\ValidationException;
-use App\Notifications\NewOrderPlaced;
-use App\Events\NewOrderPlacedEvent;
-use App\Services\NotificationService;
 
 class OrderManagement extends Component
 {
-    protected $notificationService;
     public $orders = [];
     public $createForm = false;
     public $order_id, $pickup_location, $delivery_location, $size, $weight, $status;
